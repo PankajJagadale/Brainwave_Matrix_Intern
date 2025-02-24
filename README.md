@@ -1,3 +1,9 @@
+Simple database:
+ATM.txt file contains the information of user which includes:
+i) Card number 
+ii) PIN number
+iii) Available balance 
+
 ATM interface using C++
 
 1) Enter the last 4 digits of card(INSERTING CARD):
