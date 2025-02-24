@@ -10,3 +10,7 @@ ATM interface using C++
    iii) Check balance
    iv) Change the PIN.
    
+Concepts of C++ used:
+1) OOPs
+2) File handling
+3) Error handling 
