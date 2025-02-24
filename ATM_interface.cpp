@@ -9,7 +9,7 @@ class ATM{
 private:
     string data; // <- for storing information of user;
     void updateDatabase(string data){
-    // <- for updating our database after transactions;
+    // <- for updating database after transactions;
         string line;
         ofstream outputData("newATM.txt");
         ifstream inputData("ATM.txt");
@@ -42,7 +42,7 @@ private:
         if(found){
             int count = 0;
             while(count < 3){
-                // <- max 3 trials for to enter PIN;
+                // <- max 3 trials to enter PIN;
                 string pin;
                 cout << "Enter PIN: "; cin >> pin;
                 if(data.substr(5,4) != pin) cout << "Wrong PIN\n";
@@ -107,6 +107,7 @@ private:
         updateDatabase(data);
     }
 public:
+    //calling private function using public functions;
     bool user(string card){
         return validateUser(card);
     }
